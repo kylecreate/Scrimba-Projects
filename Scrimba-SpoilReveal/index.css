@@ -1,0 +1,21 @@
+p {
+  line-height: 1.5em;
+}
+
+.post {
+  background-color: lightgray;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.spoiler {
+  background-color: black;
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out;
+}
+
+.spoiler:hover {
+  background-color: transparent;
+}
