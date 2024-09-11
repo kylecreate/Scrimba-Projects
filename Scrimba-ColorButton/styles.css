@@ -1,0 +1,65 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Root */
+:root {
+    /* Colors */
+    --body-bg: #1E1F25;
+    --btn-bg: #000;
+    --btn-color: #cbcbcb;
+    --btn-color-hover: #fff;
+    --grad-color1: #eeaf61;
+    --grad-color2: #fb9062;
+    --grad-color3: #ee5d6c;
+    --grad-color4: #ce4993;
+    --grad-color5: #6a0d83;
+
+    /* Font */
+    --karla: 'Karla', sans-serif;
+}
+
+body {
+    background-color: var(--body-bg);
+    font-family: var(--karla);
+    font-size: 1rem;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-border {
+    background: linear-gradient(115deg, var(--grad-color1), var(--grad-color2), var(--grad-color3), var(--grad-color4), var(--grad-color5));
+    padding: 0.125em;
+    border-radius: 0.313em;
+}
+
+.button-border:hover {
+    background: linear-gradient(-115deg, var(--grad-color1), var(--grad-color2), var(--grad-color3), var(--grad-color4), var(--grad-color5));
+    scale: 1.04;
+}
+
+.button {
+    background: var(--btn-bg);
+    border-radius: 0.313em;
+    border: none;
+    color: var(--btn-color);
+    cursor: pointer;
+    outline: none;
+    padding: 1em 2em;
+    position: relative;
+    font-family: inherit;
+}
+
+.button:hover {
+    color: var(--btn-color-hover);
+}
