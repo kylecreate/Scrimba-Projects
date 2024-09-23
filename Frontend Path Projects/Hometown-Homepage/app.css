@@ -1,0 +1,210 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Complete Page CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+}
+
+p, h1, h2, h3, h4 {
+    overflow-wrap: break-word;
+}
+
+/* Root Stylings */
+:root {
+    /* Colors */
+    --St-pete-red: #ed1c24;
+    --St-pete-orange: #f47920;
+    --St-pete-green: #00aa5a;
+    --St-pete-blue: #2e3192;
+    --White: #ffffff;
+    --Black: #000000;
+    --Activities-BG: #d3d3d340;
+
+    /* Font */
+    --FF-Lato: "Lato", sans-serif;
+
+    /* Font Sizes */
+    --FS-14: 0.875rem; /* 14px */
+    --FS-16: 1rem;     /* 16px */
+    --FS-20: 1.25rem;  /* 20px */
+    --FS-24: 1.5rem;   /* 24px */
+    --FS-32: 2rem;     /* 32px */
+}
+
+/* ================== */
+/*      Stylings      */
+/* ================== */
+body {
+    background-color: var(--White);
+    font-family: var(--FF-Lato);
+    font-size: var(--FS-16);
+}
+
+/* ================== */
+/*    Hero Section    */
+/* ================== */
+#hero-section {
+    align-items: center;
+    background-image: url(assets/images/City-Skyline.jpg);
+    background-position: left center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-title {
+    background-color: var(--St-pete-blue);
+    border-radius: 12px;
+    color: var(--White);
+    font-size: var(--FS-32);
+    margin-bottom: 15px;
+    padding: 12px;
+}
+
+.hero-subtitle {
+    background-color: var(--St-pete-green);
+    border-radius: 8px;
+    color: var(--White);
+    font-size: var(--FS-16);
+    max-width: 50ch;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ================== */
+/* Activities Section */
+/* ================== */
+#activities-section {
+    align-items: center;
+    background-color: var(--Activities-BG);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.activities-title {
+    color: #1D3557;
+    font-size: var(--FS-24);
+    margin-bottom: 30px;
+}
+
+.activities-subtitle {
+    margin-bottom: 10px;
+}
+
+.three-activities {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+}
+
+/* Sports Section */
+#sports-section {
+    margin-left: 40px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.sports-img {
+    border-radius: 50%;
+    height: 150px;
+    margin-bottom: 18px;
+    margin-left: 20px;
+    object-fit: cover;
+    width: 150px;
+}
+
+/* Shows Section */
+#shows-section {
+    margin-left: 40px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.shows-img {
+    border-radius: 50%;
+    height: 150px;
+    margin-bottom: 18px;
+    margin-left: 20px;
+    object-fit: cover;
+    width: 150px;
+}
+
+/* Parks Section */
+#parks-section {
+    margin-left: 40px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.parks-img {
+    border-radius: 50%;
+    height: 150px;
+    margin-bottom: 18px;
+    margin-left: 20px;
+    object-fit: cover;
+    width: 150px;
+}
+
+/* ================== */
+/* Tour Guide Section */
+/* ================== */
+#tour-guide-section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 20px;
+}
+
+.tour-guide-card {
+    background-color: #1D3557;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 15px;
+    width: 450px;
+}
+
+.tour-guide-title {
+    color: var(--White);
+    font-size: var(--FS-20);
+    margin-left: 20px;
+}
+
+.tour-guide-quote {
+    color: var(--White);
+    font-size: var(--FS-16);
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.tour-guide-name {
+    color: var(--White);
+    font-size: var(--FS-14);
+    font-style: italic;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.tour-guide-img {
+    border-radius: 50%;
+    height: 150px;
+    object-fit: cover;
+    width: 150px;
+}
