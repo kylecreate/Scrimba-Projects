@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Stylings */
+:root {
+    --white: #ffffff;
+    --red: #FC3E32;
+    --green: #007E39;
+    --flag-height: 150px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag-madagascar {
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 1.5);
+    display: flex;
+    box-shadow: 3px 2px 3px -3px rgba(0,0,0,0.75);
+}
+
+.white {
+    background-color: var(--white);
+    width: calc(var(--flag-height) / 2);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.red {
+    background-color: var(--red);
+    height: calc(var(--flag-height) / 2);
+    width: var(--flag-height);
+}
+
+.green {
+    background-color: var(--green);
+    height: calc(var(--flag-height) / 2);
+}

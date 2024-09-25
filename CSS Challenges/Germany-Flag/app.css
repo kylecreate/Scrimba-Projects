@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+:root {
+    --black: #000000;
+    --red: #DE0002;
+    --yellow: #FFCE00;
+    --flag-height: 150px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag-germany {
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 5/3);
+    display: grid;
+    box-shadow: 3px 2px 3px -3px rgba(0,0,0,0.75);
+}
+
+.black {
+    background-color: var(--black);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
