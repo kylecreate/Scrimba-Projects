@@ -1,0 +1,1 @@
+* For each arm of the cross on the flag, it's 5/8 the height and 3/16 the width of the flag.
