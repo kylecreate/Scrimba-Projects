@@ -1,0 +1,91 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+:root {
+    /* Colors */
+    --Black: rgb(0, 0, 0);
+    --Button-Color: rgb(238, 238, 238);
+    --Button-Hover-Color: rgb(255, 255, 255);
+    --Score-Color: rgb(249, 79, 109);
+    --Scoreboard-BG: rgb(27, 36, 74);
+    --Scorebox-BG: rgb(255, 255, 255);
+    --White: rgb(255, 255, 255);
+
+    /* Font */
+    --FF: "Oxanium", serif;
+
+    --FS-16: 1rem;   /* 16px */
+    --FS-45: 2.813rem; /* 45px */
+    --FS-90: 5.625rem; /* 90px */
+
+    --FW-200: 200;
+    --FW-600: 600;
+    --FW-800: 800;
+
+    /* Other */
+}
+
+/* General Styles */
+body {
+    align-content: center;
+    color: var(--White);
+    font-family: var(--FF);
+    height: 100vh;
+    justify-content: center;
+}
+
+.scoreboard-container {
+    background-color: var(--Scoreboard-BG);
+    border-radius: 15px;
+    display: flex;
+    height: 350px;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+/* Home & Guest Team */
+.home-score, .guest-score {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+}
+
+.home-title, .guest-title {
+    font-size: var(--FS-45);
+    margin-bottom: -55px;
+}
+
+#home-score-el, #guest-score-el {
+    background-color: var(--Black);
+    font-size: var(--FS-90);
+    margin-bottom: -55px;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--Scorebox-BG);
+    color: var(--White);
+    font-family: inherit;
+    font-weight: var(--FW-600);
+    margin-left: 8px;
+    padding: 10px;
+}
+
+button:hover, button:focus {
+    cursor: pointer;
+    background-color: var(--White);
+    border: 1px solid var(--Black);
+    color: var(--Black);
+}
