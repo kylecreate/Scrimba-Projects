@@ -1,0 +1,123 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* Global Styles */
+:root {
+    /* Colors */
+    --clr-span: rgb(74, 223, 134);
+    --clr-hr-line: rgb(47, 62, 83);
+    --clr-boxbg: rgb(31, 41, 55);
+    --clr-bodybg: rgb(28, 28, 28);
+    --clr-button: rgb(16, 185, 129);
+    --clr-textbox: rgb(39, 53, 73);
+    --clr-subhead: rgb(213, 212, 216);
+    --clr-white: rgb(255, 255, 255);
+
+    /* Font */
+    --FF: "Karla", sans-serif;
+
+    --FS-16: 1rem;    /* 16px */
+    --FS-20: 1.25rem; /* 20px */
+    --FS-40: 2.5rem;  /* 40px */
+
+    --FW-400: 400;
+    --FW-800: 800;
+}
+
+/* General Styles */
+body {
+    background: var(--clr-bodybg);
+    font-family: var(--FF);
+    color: var(--clr-white);
+    max-height: 100vh;
+}
+
+.container {
+    margin: 10% auto;
+    padding: 3.125rem;
+    border-radius: 0.625rem;
+    max-width: 34.375rem;
+    background: var(--clr-boxbg);
+}
+
+/* Heading Section */
+.heading {
+    text-align: left;
+    margin-bottom: 2.813rem;
+}
+
+.heading-title {
+    font-size: var(--FS-40);
+    font-weight: var(--FW-800);
+    max-width: 14ch;
+    margin-bottom: 1.25rem;
+}
+
+.heading-span {
+    color: var(--clr-span);
+}
+
+.heading-subtitle {
+    font-weight: var(--FW-400);
+    font-size: var(--FS-20);
+    color: var(--clr-subhead);
+}
+
+/* Generate Button */
+button {
+    border: none;
+    background-color: var(--clr-button);
+    border-radius: 0.375rem;
+    padding: 0.5625rem 1.0625rem 0.5625rem 0.9375rem;
+    font-size: var(--FS-16);
+    color: var(--clr-white);
+    font-weight: var(--FW-400);
+    max-width: 12.5rem;
+    max-height: 2.813rem;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}
+
+/* Horizontal Rule */
+hr {
+    background-color: var(--clr-hr-line);
+    opacity: 20%;
+}
+
+/* Text Boxes */
+.text-boxes {
+    margin-top: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1, .box-2 {
+    width: 12.5rem;
+    height: 3.125rem;
+    border-radius: 0.375rem;
+    background-color: var(--clr-textbox);
+    text-align: center;
+    align-content: center;
+    color: var(--clr-span);
+    font-size: 0.938rem;
+}
+
+.box-1 {
+    margin-right: 2.5rem;
+}
+
+.box-2 {
+    margin-left: 2.5rem;
+}
